@@ -11,7 +11,7 @@ Playlist* criar_playlist() {
     return playlist;
 }
 
-// ✅ Versão segura da liberação de memória (copiada da versão enviada no chat)
+// liberação de memória
 void liberar_playlist(Playlist* playlist) {
     if (playlist == NULL || playlist->atual == NULL) {
         free(playlist);
